@@ -31,11 +31,13 @@
   text-decoration: none;
   color:  var(--padrao);
   transition: color 0.3s ease;
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+  opacity: 1;
 }
 
 
@@ -66,7 +68,7 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+
   background: var(--check);
   border-radius: 3px;
   
@@ -124,7 +126,7 @@
 #menu
 {
   position: fixed;
-  width: 23 vw;
+  width: 23vw;
   height: 105vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
@@ -144,7 +146,8 @@
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 1.8vw;
+  font-family: montserrat;
 }
 
 /*
@@ -153,4 +156,13 @@
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+
+.small {
+  font-family: montserrat;
+  font-size: 1.1vw;
+  display: block;
+  margin: 0.5vw 2vw 1vw 1vw;
+
 }

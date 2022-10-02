@@ -110,3 +110,13 @@ function buildSeamlessLoop(items, spacing) {
 	});
 	return seamlessLoop;
 }
+
+
+
+
+$(document).ready(function(){
+	$(".link").click(function(){
+	  $(".navmain").toggleClass("nestane");
+	});
+  });
+  

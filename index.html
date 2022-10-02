@@ -18,7 +18,9 @@
 <body>
 <!-- partial:index.partial.html -->
 
-<nav role="navigation">
+
+
+<nav class="navmain" role="navigation">
 	<div id="menuToggle">
 	  <!--
 	  A fake / hidden checkbox is used as click reciever,
@@ -41,14 +43,26 @@
 	  but hey, it's pure CSS magic.
 	  -->
 	  <ul id="menu">
-		<a href="#"><li>Home</li></a>
-		<a href="#"><li>About</li></a>
-		<a href="#"><li>Info</li></a>
-		<a href="#"><li>Contact</li></a>
-		<a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+		<a  class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"><li>Projects</li></a>
+		<a   class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"><samll class="small">- &nbsp Lorem Ipsum</samll></a>
+		<a   class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"><samll class="small">-  &nbsp Lorem Ipsum</samll></a>
+		<a   class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"><samll class="small">- &nbsp Lorem Ipsum</samll></a>
+		<a   class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"><samll class="small">- &nbsp Lorem Ipsum</samll></a>
+		<a   class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"><samll class="small">- &nbsp Lorem Ipsum</samll></a>
+		<a   class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"><samll class="small">- &nbsp Lorem Ipsum</samll></a>
+		<a   class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"><li>About</li></a>
+		<a   class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"><li>Contact</li></a>
 	  </ul>
 	</div>
   </nav>
+
+  <div style="z-index: 99999999999999; position:absolute;" class="container">
+	<divstyle="z-index: 99999999999999; position:absolute;"  class="transition">
+	  <div style="z-index: 99999999999999; position:absolute;"  class="cover cover1"></div>
+	  <divstyle="z-index: 99999999999999; position:absolute;"  class="cover cover2"></div>
+	  <div style="z-index: 99999999999999; position:absolute;"  class="cover cover3"></div>
+	</div>
+ </div>
 <div class="overlay">
 	<div class="o-left"></div>
 	<div class="o-right"></div>
@@ -75,20 +89,20 @@
 	<ul class="cards">
 		<li>
 			<article>
-			  <img class="projectimg" style="width: 40vw; height: 22vw;" src="./img4.png" alt="">
+				<a class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html">  <img   class="projectimg" style="width: 40vw; height: 22vw;" src="./img4.png" alt=""></a>
 			</article>
 		   <div class="content"><span class="number">01</span> <span class="name">Lorem Ipsum</span></div></li>
 		<li>				<article>
-			<img class="projectimg"  style="width: 40vw; height: 22vw;" src="./img3.png" alt="">
+			<a class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"> 	<img class="projectimg"  style="width: 40vw; height: 22vw;" src="./img3.png" alt=""></a>
 		  </article> <div class="content"><span class="number">02</span> <span class="name">Lorem Ipsum</span></div></li>
 		<li>			<article>
-			<img class="projectimg"  style="width: 40vw; height: 22vw;" src="./img2.png" alt="">
+			<a class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"> 	<img class="projectimg"  style="width: 40vw; height: 22vw;" src="./img2.png" alt=""></a>
 		  </article><div class="content"><span class="number">03</span> <span class="name">Lorem Ipsum</span></div></li>
 		<li>		<article>
-			<img class="projectimg"  style="width: 40vw; height: 22vw;" src="./img1.png" alt="">
+			<a class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"> <img class="projectimg"  style="width: 40vw; height: 22vw;" src="./img1.png" alt=""></a>
 		  </article><div class="content"><span class="number">04</span> <span class="name">Lorem Ipsum</span></div></li>
 		<li>			<article>
-			<img class="projectimg"  style="width: 40vw; height: 22vw;" src="./karlo.jpeg" alt="">
+			<a class="link" href="file:///Users/gustav/Desktop/karlo-web/projects/project.html"> 	<img   class="projectimg"  style="width: 40vw; height: 22vw;" src="./karlo.jpeg" alt=""></a>
 		  </article><div class="content"><span class="number">05</span> <span class="name">Lorem Ipsum</span></div></li>
 	</ul>
 	<div class="actions">
@@ -100,9 +114,17 @@
 			</span></button>
 	</div>
 </div>
+
+
+  
 <!-- partial -->
   <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
 <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script><script  src="./script.js"></script>
+<script  src="./transition.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.1.7/jquery.multiscroll.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
 
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>

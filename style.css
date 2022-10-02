@@ -33,7 +33,7 @@ body {
   bottom: 0vw;
   cursor: e-resize;
   opacity: 0;
-  z-index: 99999999;
+  z-index: 10;
   width: 15vw;
   background-color: red;
   height: 80vh;
@@ -46,9 +46,9 @@ body {
   filter: blur(1vw);
   left: -10vw;
   width: 50vw;
-  height: 10vw;
+  height: 20vh;
 	background: var(--padrao);
-  z-index: 99;
+  z-index: 10;
   transition: 0.5s;
 }
 
@@ -56,11 +56,11 @@ body {
   position: fixed;
   transition: 0.5s;
   filter: blur(1vw);
-  z-index: 99;    
+  z-index: 10;    
   bottom: 0;
   right: -10vw;
   width: 50vw;
-  height: 10vw;
+  height: 20vh;
 	background: var(--padrao);
 }
 
@@ -111,17 +111,18 @@ body {
 
 .content {
   position: absolute;
-  top: 40vh;
+  top: 30vh;
+  margin-top: 5vw;
   left: 15vw;
-  z-index: 9999999999;
+  z-index: 9;
   cursor: pointer;
 }
 
 .number {
-  font-size: 5rem;
+  font-size: 6vw;
   position: absolute;
-  top: 0.2vw;
-  left: 1.5vw;
+  top: 0.2rem;
+  left: 1rem;
   opacity: 0.1;
   font-family: 'Montserrat';
   font-weight: 600;
@@ -141,6 +142,7 @@ body {
   gap: 10vw;
 	transform: translateX(-50%);
 }
+
 
 .material-symbols-outlined {
   transform: scale(1.5);
@@ -234,4 +236,48 @@ a:hover {
 .surname {
   font-weight: 700;
   color: var(--check);
+}
+
+.cover {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: -100vw;
+  z-index: 999999999999;
+}
+.transition.slide .cover1 {
+  background-color: rgb(245, 245, 245);
+  animation: slide 0.5s ease-in-out forwards;
+  position: absolute;
+  height: 200vh;
+  width: 100vw;
+  z-index: 999999999999;
+}
+.transition.slide .cover2 {
+  background-color:  rgb(23, 23, 23);
+  animation: slide 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999999999999
+}
+
+@keyframes slide {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
+.small {
+  font-family: montserrat;
+  font-size: 1.1rem;
+  display: block;
+  margin: 0.5vw 2vw 1vw 1vw;
+
 }
